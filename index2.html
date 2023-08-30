@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bgimg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(images/back_maid.jpg);
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        .topleft {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        .topleft img {
+            width: 130px;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
+
+        .bottomleft p {
+            font-size: 18px;
+            color: #ccc;
+            user-select: none;
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+        }
+
+        hr {
+            margin: auto;
+            width: 140px;
+        }
+
+        .btns button {
+            border: none;
+            outline: none;
+            padding: 18px 62px;
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            overflow: hidden;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .btns button span {
+            position: relative;
+            z-index: 2;
+            font-family: inherit;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .btns button::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 150%;
+            height: 160%;
+            z-index: 1;
+            transform-origin: bottom left;
+            transform: skew(40deg) translateX(-92%) translateY(40%);
+            transition: all .5s ease-in-out;
+            background-color: #0f0130;
+        }
+        
+        .btns button:hover::after {
+            transform: skew(40deg) translateX(0%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bgimg">
+        <div class="topleft">
+            <img src="images/logo.png">
+        </div>
+        <div class="middle">
+            <h1>HouseMaid System</h1>
+            <hr>
+            <p>Managing your workers easier</p>
+
+            <div class="btns">
+                <a href=""><button href="#"><span>LOG IN</span></button></a>
+                <a href=""><button href="#"><span>SIGN UP</span></button></a>
+            </div>
+        </div>
+        <div class="bottomleft">
+            <p>Developed by Ganza Prince</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
