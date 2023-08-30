@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/chart.jpg">
+    <link rel="stylesheet" href="extensions/bootstrap/css/bootstrap.min.css">
+    <script defer src="extensions/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="extensions/Jquery/jquery.js"></script>
+    <link rel="stylesheet" href="extensions/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <title>HouseMaid | System</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="header-info">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <header>HouseMaid System</header>
+
+        <div class="leftside">
+            <a href="#">
+                <i class="fa-solid fa-bars" title="Back" onclick="openNav()"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <div class="sidenavheader">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo-sidenav" alt="">
+            </a>
+            <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+        </div>
+        <a class="sidenavlink" href="#" data-toggle="modal" data-target="#myModal"><i class="fa-solid fa-tv"></i>
+            Dashboard</a>
+        <!-- <a class="sidenavlink" href="register.html" data-toggle="modal" data-target="#myModal"><i
+                class="fa-solid fa-user"></i> Register</a> -->
+        <a class="sidenavlink" href="register.html"><i class="fa-solid fa-user"></i> Register</a>
+        <a class="sidenavlink" href="#"><i class="fa-solid fa-house"></i> Clients</a>
+        <a class="sidenavlink" href="#"><i class="fa-solid fa-house"></i> Contact</a>
+        <a class="sidenavlink" href="searchmaid.html"><i class="fa-solid fa-arrow-right"></i> Back</a>
+
+        <div class="sidenav-bottom">
+            <div class="details">
+                <header>Follow us on:</header>
+                <a class="sidenavlink" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i> <span>Facebook</span></a>
+                <a class="sidenavlink" href="https://www.twitter.com/" target="_blank"><i
+                        class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+                <a class="sidenavlink" href="https://www.instagram.com/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+
+                <div class="about-details">
+                    <p>Designed by <a href="https://www.google.com/search?q=Ganza Parfait(Nelson Prince)"
+                            target="_blank">ganzaparfait</a></p>
+                    <p>+250 792 054 846</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="viewdetails-container">
+        <header>
+            <h1>HouseMaid Details</h1>
+        </header>
+
+        <div class="viewcontainer">
+            <div class="hfield">
+                <div class="fieldview">
+                    <label>Names</label>
+                    <p>Harry Potter</p>
+                </div>
+
+                <div class="fieldview">
+                    <label>Email</label>
+                    <p>potter@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="hfield">
+                <div class="fieldview">
+                    <label>Number</label>
+                    <p>+230564837839</p>
+                </div>
+
+                <div class="fieldview">
+                    <label>Gender</label>
+                    <p>Male</p>
+                </div>
+            </div>
+
+            <div class="hfield">
+                <div class="fieldview">
+                    <label>Description</label>
+                    <p>Well done, he's the better man.</p>
+                </div>
+
+                <div class="fieldview">
+                    <label>Occupation</label>
+                    <p>HouseKeeping</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <img src="images/logo.png" alt="">
+        </footer>
+    </div>
+
+    <section>
+        <!-- Prompt modal for signing up form -->
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">SignUp</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Sorry!!! Not yet signed up.
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">
+                            <a href="login.html" class="text-light" style="text-decoration: none;">SignUp</a>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="javascript/sidebar.js"></script>
+</body>
+
+</html>
