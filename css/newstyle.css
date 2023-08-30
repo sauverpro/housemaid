@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --whole-color: #ff7f50;
+    --main-color: #232ae7;
+    --gray-color: #808080;
+    --border-color: #dad7d7;
+    --black-color: #000000;
+    --white-color: #fff;
+}
+
+body {
+    margin-top: 75px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav .sidenavlink {
+    display: block;
+    padding: 20px 30px;
+    background-color: #f7f6f6c0;
+    text-decoration: none;
+    color: var(--black-color);
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.sidenav .sidenavheader {
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 5px;
+}
+
+.sidenav .sidenav-bottom {
+    position: relative;
+    margin-top: 200px;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+.sidenav-bottom header {
+    padding: 0 5px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.sidenav .about-details {
+    padding: 20px 10px;
+    color: var(--gray-color);
+    user-select: none;
+    border-top: 1px solid var(--border-color);
+
+}
+
+.sidenav .logo-sidenav {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 55px;
+}
+
+.sidenav .sidenavlink:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    color: var(--black-color);
+    font-size: 30px;
+    margin-left: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.sidenav .closebtn:hover {
+    color: var(--main-color);
+}
+
+
+.search-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+}
+
+.search-container h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    user-select: none;
+}
+
+.search-container h2 span {
+    position: relative;
+    z-index: -1;
+}
+
+.search-container h2 span::before {
+    content: "";
+    position: absolute;
+    background-color: #232ae7;
+    bottom: -2px;
+    height: 4px;
+    width: 47px;
+    left: 0;
+    border-radius: 8px;
+}
+
+.search-container .searchdiv {
+    position: relative;
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 40%;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+}
+
+.searchdiv input {
+    padding: 0 25px;
+    height: 50px;
+    padding-right: 58px;
+    width: 100%;
+    outline: none;
+    border: 0;
+    border-bottom: 4px solid #eee;
+    border-radius: 40px;
+}
+
+.searchdiv input::placeholder {
+    color: rgb(167, 161, 161);
+    font-size: 16px;
+}
+
+.searchdiv button {
+    position: absolute;
+    right: 20px;
+    color: gray;
+    padding: 10px 20px;
+    font-size: 18px;
+    top: 23.5%;
+    border-radius: 30px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.searchdiv button:hover {
+    background-color: #d8d5d5;
+    color: var(--main-color);
+}
+
+.housemaid-details {
+    width: 100%;
+}
+
+.housemaid-details .table-details {
+    overflow-y: scroll;
+}
+
+.housemaid-details table {
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    border: 1px solid #ddd;
+}
+
+.housemaid-details table th,
+.housemaid-details table td {
+    text-align: left;
+    padding: 16px;
+}
+
+.housemaid-details table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.viewdetails-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.viewdetails-container header h1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.viewdetails-container .viewcontainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+.viewdetails-container .viewcontainer .hfield .fieldview {
+    margin-right: 40px;
+    border-bottom: 1px solid #eee;
+}
+
+.hfield .fieldview label {
+    font-weight: 700;
+}
+
+.hfield .fieldview p {
+    padding-left: 10px;
+}
+
+.viewdetails-container footer img {
+    opacity: 0.1;
+    user-select: none;
+    pointer-events: none;
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+    .viewdetails-container .viewcontainer {
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .viewdetails-container header h1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    .search-container .searchdiv {
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .search-container .searchdiv {
+        width: 100%;
+        padding: 1px;
+    }
+
+    .searchdiv input {
+        width: 100%;
+    }
+
+    .searchdiv button {
+        right: 0px;
+        font-size: 18px;
+        top: 2%;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
