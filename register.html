@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/chart.jpg">
+    <link rel="stylesheet" href="extensions/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/newstyle.css">
+    <title>HouseMaid | System</title>
+</head>
+
+<body>
+
+    <div class="wholepage">
+        <div class="header-info">
+            <div>
+                <a href="index.html">
+                    <img src="images/logo.png" alt="">
+                </a>
+            </div>
+            <header>HouseMaid System</header>
+
+            <div class="leftside">
+                <a href="#">
+                    <i class="fa-solid fa-bars" title="Back" onclick="openNav()"></i>
+                </a>
+            </div>
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+            <div class="sidenavheader">
+                <img src="images/logo.png" class="logo-sidenav" alt="">
+                <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+            </div>
+            <a class="sidenavlink" href="#"><i class="fa-solid fa-tv"></i> Dashboard</a>
+            <a class="sidenavlink" href="searchmaid.html"><i class="fa-solid fa-search"></i> Search</a>
+            <a class="sidenavlink" href="#"><i class="fa-solid fa-house"></i> Clients</a>
+            <a class="sidenavlink" href="#"><i class="fa-solid fa-house"></i> Contact</a>
+            <a class="sidenavlink" href="searchmaid.html"><i class="fa-solid fa-arrow-right"></i> Back</a>
+
+            <div class="sidenav-bottom">
+                <div class="details">
+                    <header>Follow us on:</header>
+                    <a class="sidenavlink" href="https://www.facebook.com/" target="_blank"><i
+                            class="fa-brands fa-facebook"></i> <span>Facebook</span></a>
+                    <a class="sidenavlink" href="https://www.twitter.com/" target="_blank"><i
+                            class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+                    <a class="sidenavlink" href="https://www.instagram.com/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+    
+                    <div class="about-details">
+                        <p>Powed by <a href="https://naradaelectronics.rw/"
+                                target="_blank">Narada Ltd</a></p>
+                        <!-- <p>+250 792 054 846</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-contents">
+            <div class="container">
+                <header>Registration Form</header>
+
+                <form action="#">
+                    <div class="form first">
+                        <div class="details personal">
+                            <span class="title">Personal Details</span>
+
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">Full Name </label>
+                                    <input type="text" name="" placeholder="Enter Names" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Date of birth </label>
+                                    <input type="date" name="" placeholder="Enter Date of birth" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Email </label>
+                                    <input type="email" name="" placeholder="Enter Email" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Mobile Number </label>
+                                    <input type="number" name="" placeholder="Enter mobile number" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Gender </label>
+                                    <input type="text" name="" placeholder="Enter gender" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Occupation </label>
+                                    <input type="text" name="" placeholder="Enter occupation" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="details ID">
+                            <span class="title">Identity Details</span>
+
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">ID Type </label>
+                                    <input type="text" name="" placeholder="Enter ID type" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">ID Number </label>
+                                    <input type="number" name="" placeholder="Enter ID number" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Issued Authority </label>
+                                    <input type="text" name="" placeholder="Enter issued authority" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Issued State </label>
+                                    <input type="text" name="" placeholder="Enter issued state" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Issued Date </label>
+                                    <input type="date" name="" placeholder="Enter issued date" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Expiry Date </label>
+                                    <input type="date" name="" placeholder="Enter expiry date" required>
+                                </div>
+                            </div>
+
+                            <button class="nextBtn">
+                                <span class="btnText">Next</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <div class="form second">
+                        <div class="details address">
+                            <span class="title">Address Details</span>
+
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">Address Type </label>
+                                    <input type="text" name="" placeholder="Enter address type" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Nationality </label>
+                                    <input type="text" name="" placeholder="Enter nationality" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">State </label>
+                                    <input type="text" name="" placeholder="Enter state" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">District </label>
+                                    <input type="text" name="" placeholder="Enter district" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Block Number </label>
+                                    <input type="number" name="" placeholder="Enter block number" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Ward Number </label>
+                                    <input type="number" name="" placeholder="Enter ward number" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="details family">
+                            <span class="title">Family Details</span>
+
+                            <div class="fields">
+                                <div class="input-field">
+                                    <label for="">Father Name </label>
+                                    <input type="text" name="" placeholder="Enter father name" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Mother Name </label>
+                                    <input type="text" name="" placeholder="Enter mother name" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Grand Father </label>
+                                    <input type="text" name="" placeholder="Enter grand father name" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Spouse Name </label>
+                                    <input type="text" name="" placeholder="Enter spouse name" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Father in law </label>
+                                    <input type="text" name="" placeholder="Father in law" required>
+                                </div>
+
+                                <div class="input-field">
+                                    <label for="">Mother in law </label>
+                                    <input type="text" name="" placeholder="Mother in law" required>
+                                </div>
+                            </div>
+
+                            <div class="buttons">
+                                <div class="backBtn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <span class="btnText">Back </span>
+                                </div>
+
+                                <button class="nextBtn submitbtn">
+                                    <span class="btnText">Submit </span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/sidebar.js"></script>
+</body>
+
+</html>
