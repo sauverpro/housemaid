@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/chart.jpg">
+    <link rel="stylesheet" href="extensions/bootstrap/css/bootstrap.min.css">
+    <script defer src="extensions/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="extensions/Jquery/jquery.js"></script>
+    <link rel="stylesheet" href="extensions/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/newstyle.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <title>HouseMaid | System</title>
+
+    <style>
+        .vbtn {
+            color: #232ae7;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-info">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <header>HouseMaid System</header>
+
+        <div class="leftside">
+            <a href="#">
+                <i class="fa-solid fa-bars" title="Back" onclick="openNav()"></i>
+            </a>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <div class="sidenavheader">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo-sidenav" alt="">
+            </a>
+            <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+        </div>
+        <a class="sidenavlink" href="#" data-toggle="modal" data-target="#myModal"><i class="fa-solid fa-tv"></i>
+            Dashboard</a>
+        <!-- <a class="sidenavlink" href="register.html" data-toggle="modal" data-target="#myModal"><i
+                class="fa-solid fa-user"></i> Register</a> -->
+        <a class="sidenavlink" href="register.html"><i class="fa-solid fa-user"></i> Register</a>
+        <a class="sidenavlink" href="#"><i class="fa-solid fa-house"></i> Clients</a>
+        <a class="sidenavlink" href="#"><i class="fa-solid fa-house"></i> Contact</a>
+
+        <div class="sidenav-bottom">
+            <div class="details">
+                <header>Follow us on:</header>
+                <a class="sidenavlink" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i> <span>Facebook</span></a>
+                <a class="sidenavlink" href="https://www.twitter.com/" target="_blank"><i
+                        class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+                <a class="sidenavlink" href="https://www.instagram.com/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+
+                <div class="about-details">
+                    <p>Powed by <a href="https://naradaelectronics.rw/"
+                            target="_blank">Narada Ltd</a></p>
+                    <!-- <p>+250 792 054 846</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <h2><span>Search</span> HouseMaid Details</h2>
+        <div class="searchdiv">
+            <input type="text" name="" placeholder="Search with housemaid name..." autofocus>
+            <button type="button"><i class="fa-solid fa-search"></i></button>
+        </div>
+
+        <span style="color: #444;padding: 5px 5px;">If housemaid not got in system, please register him/her.</span>
+    </div>
+
+    <div class="housemaid-details">
+        <div class="table-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Names</th>
+                        <th>Email</th>
+                        <th>MobileNumber</th>
+                        <th>Gender</th>
+                        <th>Description</th>
+                        <th>Occupation</th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>HK004</td>
+                        <td>Jill</td>
+                        <td>smith@gmail.com</td>
+                        <td>50</td>
+                        <td>Male</td>
+                        <td>Well done, he's the better man.</td>
+                        <td>HouseKeeping</td>
+                        <td>
+                            <a href="view.html" class="vbtn"><i
+                                    class="fa-solid fa-eye"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <section>
+        <!-- Prompt modal for signing up form -->
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-md">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">SignUp</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Sorry!!! Not yet signed up.
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">
+                            <a href="login.html" class="text-light" style="text-decoration: none;">SignUp</a>
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="javascript/sidebar.js"></script>
+</body>
+
+</html>
