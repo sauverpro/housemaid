@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/chart.jpg">
+    <link rel="stylesheet" href="extensions/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="extensions/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <title>HouseMaid | LogIn</title>
+</head>
+
+<body>
+    <div class="header-info">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <header>HouseMaid System</header>
+
+        <div class="leftside">
+            <a href="#">
+                <i class="fa-solid fa-bars" title="Back" onclick="openNav()"></i>
+            </a>
+        </div>
+    </div>
+    
+    <div id="mySidenav" class="sidenav">
+        <div class="sidenavheader">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo-sidenav" alt="">
+            </a>
+            <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>
+        </div>
+        <a class="sidenavlink" href="index.html" data-toggle="modal" data-target="#myModal"><i class="fa-solid fa-house"></i> Home</a>
+        <a class="sidenavlink" href="searchmaid.html" data-toggle="modal" data-target="#myModal"><i
+                class="fa-solid fa-arrow-right"></i> Back</a>
+
+        <div class="sidenav-bottom">
+            <div class="details">
+                <header>Follow us on:</header>
+                <a class="sidenavlink" href="https://www.facebook.com/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i> <span>Facebook</span></a>
+                <a class="sidenavlink" href="https://www.twitter.com/" target="_blank"><i
+                        class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+                <a class="sidenavlink" href="https://www.instagram.com/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+
+                <div class="about-details">
+                    <p>Powed by <a href="https://naradaelectronics.rw/"
+                            target="_blank">Narada Ltd</a></p>
+                    <!-- <p>+250 792 054 846</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="img">
+            <img src="images/bgimg.png" alt="">
+        </div>
+
+        <div class="login-content">
+            <form action="#" autocomplete="off">
+                <div class="title-container">
+                    <h1>Login</h1>
+                    <h2>Manage, With us!</h2>
+                    <p style="opacity: 0;">Enter your personal details and start journey with us. Plaese Don't delete
+                    <p>
+                    <p style="text-align: center;">Any error message</p>
+                </div>
+                <div class="login-inner-content">
+                    <div class="input-div one">
+                        <div class="i">
+                            <i class="fa-solid fa-user-circle"></i>
+                        </div>
+
+                        <div class="div">
+                            <h5>UserName</h5>
+                            <input type="text" name="username" class="input">
+                        </div>
+                    </div>
+
+                    <div class="input-div pass">
+                        <div class="i">
+                            <i class="fa-solid fa-eye" onclick="showPassword()"></i>
+                        </div>
+
+                        <div class="div">
+                            <h5>Password</h5>
+                            <input type="password" id="password" name="password" class="input">
+                        </div>
+                    </div>
+
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <!-- <button type="submit" class="btn">LogIn</button> -->
+                <input type="submit" name="submit" class="loginbtn" value="Login">
+
+                <h5>Not a member ? <a href="signup.html">Sign up</a></h5>
+            </form>
+        </div>
+    </div>
+
+    <script src="javascript/login.js"></script>
+    <script src="javascript/sidebar.js"></script>
+</body>
+
+</html>
